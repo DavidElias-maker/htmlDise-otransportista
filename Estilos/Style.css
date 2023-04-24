@@ -1,0 +1,389 @@
+body{
+    background-color: grey;
+}
+
+.main{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 10000px;
+    margin: auto 0px auto auto;
+    margin-bottom: 500px;
+   
+    
+   
+}
+
+.form-sheet {
+    margin: 150px 200px;
+    height: 792px;
+    width: 612px;
+    background-color: #FFFFFF;
+    box-shadow: 10px 10px 5px #404040;
+}
+
+.squared {
+    height: 300px;
+    width: 212px;
+    background-color: #FFFFFF;
+    margin-left: 850px;
+    margin-top: -750px;
+    border: 10px solid #9633FF;
+    border-radius: 25px;
+}
+
+.rectangle {
+    height: 38px;
+    width: 612px;
+    background-color: #9633FF;
+    position: initial;
+}
+
+.header {
+   
+    background-color: #9633FF ;
+    padding: 2rem 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.header a {
+    
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    
+    width: 85%;
+    max-width: 900px;
+    margin: 0 top;
+
+}
+.logo-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.menu-icon {
+    display: none;
+}
+
+.navigation ul {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   
+}
+
+.navigation ul li {
+    display: inline-block;
+}
+
+.navigation ul li a {
+display: block;
+padding: 0.5rem 1rem;
+transition: all 0.4s linear;
+border-radius: 5px;
+}
+
+.navigation ul li a:hover {
+background-color: #6600ff;
+}
+
+.logo{
+    padding-left: 20px;
+    letter-spacing: 5px;
+    font-size: 1.3em;
+}
+
+@media only screen and (max-width: 767px){
+   
+   .menu-icon{
+    display: block;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    color: white;
+}
+
+   .navigation{
+    width:  100%;
+    margin-top: 1rem;
+   }
+   
+   .navigation ul {
+    display: none;
+   }
+   .navigation ul.show {
+    display: block;
+   }
+    
+    .navigation ul li {
+        display: block;
+    }
+    
+    .navigation ul li a {
+    display: block;
+    padding: 0.5rem 0;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+    }
+    
+    .navigation ul li a:hover {
+    background-color: #6600ff;
+    }
+
+}
+
+.Titulo {
+    font-family: sans-serif Arial, Helvetica, sans-serif;
+    size: 12pt;
+    text-align: center;
+}
+
+.Label {
+    font-family: sans-serif Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    size: 10pt;
+    margin-left: 200px;
+}
+
+.ID {
+    font-family: sans-serif Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    size: 10pt;
+    margin-left: 10px;
+}
+
+.fecha {
+    font-family: sans-serif Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    size: 10pt;
+    margin-left: 100px;
+}
+
+.Fecha {
+    width: 200px;
+    border-width: 0.3em 0.3em;
+}
+
+.nombre {
+    font-family: sans-serif Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    size: 10pt;
+    margin-left: 100px;
+}
+
+.Nombre {
+    margin-left: 100px;
+    width: 300px;
+    border-width: 0.3em 0.3em;
+}
+
+.sexo {
+    font-family: sans-serif Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    size: 10pt;
+    margin-left: 100px;
+}
+
+.Sexo {
+   
+    border-width: 0.3em 0.3em;
+}
+
+.edad {
+    font-family: sans-serif Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    size: 10pt;
+    margin-left: 100px;
+}
+
+.Edad {
+    width: 20px;
+    border-width: 0.3em 0.3em;
+}
+
+.fecha_nac {
+    font-family: sans-serif Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    size: 10pt;
+    margin-left: 100px;
+}
+
+.Fecha_Nac {
+    width: 200px;
+    border-width: 0.3em 0.3em;
+}
+
+.puesto {
+    font-family: sans-serif Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    size: 10pt;
+    margin-left: 100px;
+}
+
+.Puesto {
+    margin-left: 100px;
+    width: 300px;
+    border-width: 0.3em 0.3em;
+}
+
+.estacion {
+    font-family: sans-serif Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    size: 10pt;
+    margin-left: 100px;
+}
+
+.Estacion {
+    margin-left: 100px;
+    width: 300px;
+    border-width: 0.3em 0.3em;
+}
+
+.contrato {
+    font-family: sans-serif Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    size: 10pt;
+    margin-left: 100px;
+}
+
+.Contrato {
+   
+    border-width: 0.3em 0.3em;
+}
+
+.empleado {
+    font-family: sans-serif Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    size: 10pt;
+    margin-left: 15px;
+}
+
+.Empleado {
+   
+    border-width: 0.3em 0.3em;
+}
+
+.fecha_ini {
+    font-family: sans-serif Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    size: 10pt;
+    margin-left: 100px;
+}
+
+.Fecha_Ini {
+    width: 200px;
+    border-width: 0.3em 0.3em;
+}
+
+.fecha_term {
+    font-family: sans-serif Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    size: 10pt;
+    margin-left: 100px;
+}
+
+.Fecha_Term {
+    width: 200px;
+    border-width: 0.3em 0.3em;
+}
+
+.Buscar {
+    font-family: sans-serif Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    size: 10pt;
+    margin-left: 15px;
+    border-width: 0.3em 0.3em;
+}
+
+.estado {
+    font-family: sans-serif Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    size: 10pt;
+    margin-left: 100px;
+    display: none;
+}
+
+.Estado {
+   
+    border-width: 0.3em 0.3em;
+    margin-left: 250px;
+    display: none;
+}
+
+.estadomostrar {
+    font-family: sans-serif Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    size: 10pt;
+    margin-left: 100px;
+   
+}
+
+.EstadoMostrar {
+   
+    border-width: 0.3em 0.3em;
+    margin-left: 250px;
+   
+}
+
+.buscarporlabel {
+    display: inline-block;
+    margin-left: 28px;
+}
+
+.boton1 {
+    margin-left: 55px;
+    background-color: #8354EF; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.boton2 {
+    margin-left: 52px;
+    background-color: #8354EF; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.boton3 {
+    margin-left: 55px;
+    background-color: #8354EF; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.boton1:hover {
+    background: #362262;
+}
+
+.boton2:hover {
+    background: #362262;
+}
+
+.boton3:hover {
+    background: #362262;
+}

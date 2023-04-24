@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos/Style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="Javascript/Script.js"></script>
+    <title>RRHH</title>
+</head>
+<body>
+    <header class="header">
+<div class="container logo-nav-container">
+    <a href="#" class="logo">SIMAN</a>
+    <span class="menu-icon">Ver Menu</span>
+    <nav class="navigation">
+        <ul class="show">
+            <li><a href="#"> inicio</a></li>
+            <li><a href="#"> Modificar</a></li>
+            <li><a href="#"> Buscar</a></li>      
+            <li><a href="#"> Cerrar Sesion</a></li>  
+            
+        </ul>
+       
+       
+    </nav>
+    
+</div>
+
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="form-sheet">
+                <div class="rectangle"></div>
+                <img src="Imagenes/Siman_logo.png" width="100px" height="50px" >
+                <h3 class="Titulo">FORMULARIO DE ASIGNACION DE CREDENCIALES</h3>               
+                <label class="Label">ID Documento: </label>
+                <label id="ID" class="ID">ID</label>
+                <br>
+                <br>
+                <br>
+                <label for="FECHA" class="fecha">Fecha: </label>
+                <input class="Fecha" type="date" id="FECHA" name="fecha"><br><br>
+                <label class="nombre">Nombre Completo: </label><br>
+                <input class="Nombre" type="text" id="NOMBRE" name="nombre"><br><br>
+                <label class="sexo">Sexo: </label>
+                <select class="Sexo" type="text" id="SEXO" name="sexo"><br><br>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option></select><br><br>
+
+                <label for="EDAD" class="edad">Edad: </label>
+                <input class="Edad" type="text" id="EDAD" name="edad"><br><br>
+                <label for="FECHA_NAC" class="fecha_nac">Fecha de Nacimiento: </label>
+                <input class="Fecha_Nac" type="date" id="FECHA_NAC" name="fecha_nac"><br><br>
+                <label class="puesto">Puesto Asignado: </label><br>
+                <input class="Puesto" type="text" id="PUESTO" name="puesto"><br><br>
+                <label class="estacion">Estacion o Lugar de Trabajo: </label><br>
+                <input class="Estacion" type="text" id="ESTACION" name="estacion"><br><br>
+                <label class="contrato">Tipo de Contrato: </label>
+                <select class="Contrato" type="text" id="CONTRATO" name="Contrato">
+                    <option value="Permanente">Permanente</option>
+                    <option value="Temporal">Temporal</option></select>
+                    <label class="empleado">Tipo de Empleado: </label>
+                <select class="Empleado" type="text" id="EMPLEADO" name="empleado">
+                    <option value="Externo">Externo</option>
+                    <option value="Interno">Interno</option></select><br><br>
+                    <label for="FE_INIC" class="fecha_ini">Fecha de Inicio: </label>
+                <input class="Fecha_Ini" type="date" id="FECHA_INI" name="fecha_ini"><br><br>
+                <label for="FE_TERM" class="fecha_term">Fecha de Terminacion: </label>
+                <input class="Fecha_Term" type="date" id="FECHA_TERM" name="fecha_term"><br><br><br>
+                <label class="estado" class="hide" id="estado">¿Actualmente esta Empleado esta Activo o Inactivo? </label><br><br>
+                <select class="Estado" class="hide" type="text" id="ESTADO" name="estado">
+                    <option value="Activo">Activo</option>
+                    <option value="Inactivo">Inactivo</option></select>
+            </div>
+<script>
+     $('#CONTRATO').change(function(){
+    var ResponseID = $(this).val();
+
+    if(ResponseID == "Temporal"){
+        $('#estado').removeClass('estado');
+        $('#estado').addClass('estadomostrar');
+        $('#ESTADO').removeClass('Estado');
+        $('#ESTADO').addClass('EstadoMostrar');
+    }else{
+       
+
+        $('#estado').removeClass('hide');
+        $('#estado').addClass('estado');
+        $('#ESTADO').removeClass('hide');
+        $('#ESTADO').addClass('Estado');
+    }
+    console.log(ResponseID);
+});
+</script>
+            
+            <div class="squared">
+                <br>
+                <label for="Tipo" class="buscarporlabel">Buscar por:</label>
+
+                    <select name="Tipo" id="cars">
+                    <option value="ID">ID</option>
+                    <option value="Nombre">Nombre</option>
+                    </select>
+                <br>
+                <br>
+                <input class="Buscar" type="text" id="BUSCAR" name="buscar">
+                    <br>
+                    <br>
+                    <input type="submit" class="boton1" value="Buscar">
+                    <br>
+                    <br>
+                    <input type="submit" class="boton2" value="Ingresar">
+                    <br>
+                    <br>
+                    <input type="submit" class="boton3" value="Limpiar">
+                
+               
+
+                
+            </div>
+
+            
+        </div>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

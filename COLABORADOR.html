@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos/Style_colaborador.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="Javascript/Script.js"></script>
+    <script src="Javascript/MaskScript.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/jquery.inputmask.bundle.js"></script>
+
+
+    <title>RRHH</title>
+</head>
+<body>
+    <header class="header">
+<div class="container logo-nav-container">
+    <a href="#" class="logo">SIMAN</a>
+    <span class="menu-icon">Ver Menu</span>
+    <nav class="navigation">
+        <ul class="show">
+            <li><a href="#"> inicio</a></li>
+            <li><a href="#"> Modificar</a></li>
+            <li><a href="#"> Buscar</a></li>      
+            <li><a href="#"> Cerrar Sesion</a></li>  
+            <label >Usuario</label>
+        </ul>
+       
+       
+    </nav>
+    
+</div>
+
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="form-sheet">
+                <br>
+                <br>
+                <br>
+                <label class="nombre">Primer Nombre: </label>
+                <input class="Nombre" type="text" id="NOMBRE" name="nombre"><td>
+                <label class="apellido">Primer Apellido: </label>
+                <input class="Apellido" type="text" id="APELLIDO" name="apellido"><br><br>
+                <label class="dni">DNI: </label>
+                <input class="Dni" type="text" id="DNI" name="dni" pattern="\d{3}\-\d{3}\-\d{4}" data-mask="(999)-999-9999" placeholder="(999)-999-9999"><br><br>
+                <label class="fecha_nac">Fecha de Nacimiento: </label>
+                <input class="Fecha_Nac" type="text" id="FECHA_NAC" name="fecha_nac" pattern="\d{2}\-\d{2}\-\d{4}" data-mask="mm/dd/yyyy" placeholder="mm/dd/yyyy"><br><br>
+                <label class="direccion">Direccion: </label><br>
+                <textarea class="Direccion" id="DIRECCION" name="direccion" rows="4" cols="50"></textarea><br><br>
+                <label class="telefono">Telefono: </label>
+                <input class="Telefono" type="text" id="TELEFONO" name="telefono" pattern="\d{4}\-\d{4}\" data-mask="(999) 9999-9999" placeholder="(###) ####-####"><br><br>
+               
+            </div>
+
+            
+            <div class="squared">                
+                <br>              
+                    <input type="submit" class="boton2" value="Ingresar">
+                    <br>
+                    <br>
+                    <input type="submit" class="boton3" value="Limpiar">
+                              
+            </div>
+
+            
+        </div>
+
+
+
+     
+    </main>
+    
+    <footer>
+
+    </footer>
+</body>
+</html>
+
